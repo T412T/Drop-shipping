@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>Inscription</h1>
+
+   {# {{ form(userForm) }} #}
+
+   {{ form_start(userForm) }}
+    <div class="custiomField">
+        {{ form_row(userform.email) }}
+    </div>
+
+    <div class="custiomField">
+        {{ form_row(userform.username) }}
+    </div>
+
+    <div class="custiomField">
+        {{ form_row(userform.password) }}
+    </div>
+
+   {{ form_end(userForm) }} 
+
+
+
+{% endblock %}
